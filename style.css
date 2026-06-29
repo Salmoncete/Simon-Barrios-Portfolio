@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #131313;
+    color: #fff;
+}
+/*------------------------Portfolio----------*/
+#portfolio{
+    padding: 20px;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;   
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.4s;
+    position: absolute
+    z-index: 1; /* Set z-index as desired */
+}
+.layer{
+    position: relative;
+    z-index: 2;
+    background: none;
+}
+.layer h3{
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 3px;
+} 
+.work:hover img{
+    transform: scale(0.9);
+}
+/*-----------------INSTAGRAM BTN-----------*/
+.btn{
+    display: block;
+    font-size: medium;
+    margin-left: auto;
+    margin-top: -40px;
+    width: fit-content;
+    border: 2px solid #fff;
+    padding: 14px 50px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #d10b4690;
+}
+/*--------CONTACT----------*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#contact {
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.contact-left h1{
+    color: #7bc130;
+    font-style: italic;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 10px;
+    color: #d6d6d6;
+    font-size: medium;
+    font-family: Helvetica;
+    font-style: oblique;
+}
+.contact-left p i{
+    color: #fff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.btn.btn2{
+    display: inline-block;
+    background: #7bc130;
+    margin-bottom: 10px;
+}
+.btn3{
+    margin-top: auto;
+    padding: 7px 30px;
+    color: #fff;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2f2f2f;
+    padding: 15px;
+    margin: 10px 0;
+    color: #d6d6d6;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/*---------------------------------------------------------css for small screens--------------------------------*/
+@media only screen and (max-width: 600px) {
+    .h1{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .btn{
+    display: block;
+    font-size: medium;
+    margin-right: auto;;
+    width: fit-content;
+    border: 2px solid #fff;
+    padding: 14px 50px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #fff;;
+    text-decoration: none;
+    transition: background 0.5s;
+    }
+.btn:hover{
+    background: #d10b4690;
+}
+}
+
+

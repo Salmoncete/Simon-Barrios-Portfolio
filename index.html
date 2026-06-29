@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sol Barrios</title>
+    <link rel="stylesheet" href="style.css" 
+</head>
+<body>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Simón Barrios // Portfolio 
+            <a href="https://www.instagram.com/_sol.barrios/" class="btn">Instagram</a>
+        </h1>
+        <div class="work-list">
+            <div class="work">
+                <a href="https://www.instagram.com/_sol.barrios/reel/DDA6S7USWm4/" target="_blank">
+                    <img src="Images/Gato.png" alt="Animación 2D">
+                </a>
+                <div class="layer">
+                    <h3>Animación 2D</h3>
+                    <p>Realización</p>
+                </div>
+            </div>
+             <div class="work">
+                <a href="https://www.youtube.com/watch?v=3j0RGNAQZKo&list=PLn87bLEzxwZ75u3pjRcu383U_Bky800GF&index=13" target="_blank">
+                    <img src="Images/Juego.jpg" alt="El Juego Empezó">
+                </a>
+                <div class="layer">
+                    <h3>El Juego Empezó</h3>
+                    <p>Asis. Producción</p>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.instagram.com/_sol.barrios/reel/DDxzKWKSixN/" target="_blank">
+                    <img src="Images/pav2.png" alt="Autorretrato">
+                </a>
+                <div class="layer">
+                    <h3>Autorretrato</h3>
+                    <p>Realización</p>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.instagram.com/entreelcieloylatierra.doc/reel/DPU4qN-DLjN/" target="_blank">
+                    <img src="Images/Gilda.png" alt="Entre el Cielo y la Tierra">
+                </a>
+                <div class="layer">
+                    <h3>Entre el Cielo y la Tierra</h3>
+                    <p>Asis. Producción y Música original</p>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.instagram.com/_sol.barrios/reel/DDA4imZStj4/" target="_blank">
+                    <img src="Images/Cultural.png" alt="No al Apagón Cultural">
+                </a>
+                <div class="layer">
+                    <h3>No al Apagón Cultural</h3>
+                    <p>Animación 2D</p>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://youtu.be/0qM-otFVNyc" target="_blank">
+                    <img src="Images/Barrere.png" alt="Caleidoscopio">
+                </a>
+                <div class="layer">
+                    <h3>Caleidoscopio</h3>
+                    <p>Sonido</p>   
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://youtu.be/dZreSBPKzZ8" target="_blank">
+                    <img src="Images/tav.png" alt="Punto Aparte">
+                </a>
+                <div class="layer">
+                    <h3>Punto Aparte</h3>
+                    <p>Iluminación</p>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.youtube.com/watch?v=4A24q4k1XR8&t=40s&pp=ygUTbGltaW5hbCBpdmFuIGVndXJ6YQ%3D%3D" target="_blank">
+                    <img src="Images/Liminal.png" alt="Liminal">
+                </a>
+                <div class="layer">
+                    <h3>Liminal</h3>
+                    <p>Guión y Música original</p>
+                </div>
+            </div>
+            <div class="work">
+                <a href="https://www.instagram.com/_sol.barrios/reel/DDA464-yJZM/" target="_blank">
+                    <img src="Images/Ciano.png" alt="Cianotipia">
+                </a>
+                <div class="layer">
+                    <h3>Cianotipia</h3>
+                    <p>Realización</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"> 
+                    <h1 class="sub-title">Contacto</h1>
+                    <p> Mail: S.barrios451@protonmail.com</p>
+                    <p> Celular: +54 1136509711</p>
+                    <p><a href="https://www.linkedin.com/in/sim%C3%B3n-barrios-91a324212/" class="btn btn2 btn3">LinkedIn</a></p>
+                    <p><a href="Images/Cv Simon Barrios.pdf" class="btn btn2">Descargar Cv</a></p>
+               </div>
+
+                <div class="contact-right">
+              </div>
+        </div>
+    </div>
+</div>
+
+<script>
+	const scriptURL = 'https://script.google.com/macros/s/AKfycbyb_HgpbVM1L2jlQyUOZEMjjxhN9mHT-s_4XQ91qz65i1BNVvgSWYs8CiFoXA7gJqw/exec'
+	const form = document.forms['Mensajes Website']
+
+	form.addEventListener('submit', e => {
+		e.preventDefault()
+		fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+			.then(response => response.json())
+			.then(response => console.log('Success!', response))
+			.catch(error => console.error('Error!', error.message))
+	})
+</script>
+</body>
+</html>
